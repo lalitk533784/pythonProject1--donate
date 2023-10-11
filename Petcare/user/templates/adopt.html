@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>StreetPawCare , Adopt</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link rel="icon" href="/static/img/logos.png" type="image/png" style="height:40px; width:40px; border-radius:50px ;">
+
+    <!-- Favicon -->
+    <link href="/static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="/static/lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+     
+    <!--alert function start-->
+    {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                    <strong>Message:</strong> {{ message }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                {% endfor %}
+    <!--alert function end-->
+    
+        <!-- Topbar Start -->
+        <div class="row py-3 px-lg-5">
+            
+            <div class="col-lg-4 d-flex align-items-center">
+                <img class="img-fluid" src="/static/img/pet-logo2.png" style="width: 50px; height: 50px;" alt="logo">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                     <h1 class="m-0 display-5 text-capitalize"><span class="text-primary">StreetPaw</span>Care</h1>
+                </a>
+            </div>
+            
+            <div class="col-lg-8 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <div class="d-inline-flex flex-column text-center pr-3 border-right">
+                        <h6>Opening Hours</h6>
+                        <p class="m-0">8.00AM - 8.00PM</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center px-3 border-right">
+                        <h6>Email Us</h6>
+                        <p class="m-0">pawcare.info@gmail.com</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center pl-3">
+                        <h6>Call Us</h6>
+                        <p class="m-0">+91 7088664069</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">StreetPaw</span>Care</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justif y-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="/" class="nav-item nav-link ">Home</a>
+                    <a href="/service/" class="nav-item nav-link">Service</a>
+                    <a href="/adopt/" class="nav-item nav-link active">Adopt</a>
+                    <a href="/gallary/" class="nav-item nav-link">Gallery</a>
+                    <a href="/contact/" class="nav-item nav-link">Contact</a>
+                    <a href="/about/" class="nav-item nav-link">About</a>
+                </div>
+                 
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Adopt Start -->
+    <div class="container-fluid bg-light pt-5 pb-4">
+        <div class="container py-5">
+            <div class="d-flex flex-column text-center mb-5">
+                
+                <h1 class="display-4 m-0">Choose for <span class="text-primary">You Like</span></h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0">
+                        <div class="card-header position-relative border-0 p-0 mb-4">
+                            <img class="card-img-top" src="https://i0.wp.com/kathmandutribune.com/wp-content/uploads/2019/02/ffrfrfrfr-scaled.jpg?w=2400&ssl=1" alt="">
+                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0; left: 0; z-index: 1; ;">
+                                
+                        </div>
+                            <h3 class="text-primary mb-3 text-center">Sheru</h3>
+                        </div>
+                        <div class="card-body text-center p-0">
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item p-2"></i>
+                                   <h6>
+                                    Age: Approximately 4 years
+                                   </h6>
+                                </li>
+                                <li class="list-group-item p-2">
+                                    <p>
+                                        Meet Sheru, a friendly dog looking for a loving home. He's in good health and adores spending time with people. Whether you're a family or an individual, Sheru is ready to be your loyal companion. To adopt Sheru and give him a forever home, please contact us today!
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 p-0">
+                            <a href="/adoptform/" class="btn btn-primary btn-block p-3" style="border-radius: 0;">Abopt</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0">
+                        <div class="card-header position-relative border-0 p-0 mb-4">
+                            <img class="card-img-top" src="https://1.bp.blogspot.com/-o4wJPHtQgXI/VkIMBRS1PDI/AAAAAAAACv8/0TINqIw9Ch8/s1600/Stray_Dog_Bahamas.jpg" alt="">
+                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0; left: 0; z-index: 1; ;">
+                                
+                        </div>
+                            <h3 class="text-primary mb-3 text-center">Moti</h3>
+                        </div>
+                        <div class="card-body text-center p-0">
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item p-2"></i>
+                                   <h6>
+                                    Age: Around 3 years
+                                   </h6>
+                                </li>
+                                <li class="list-group-item p-2">
+                                    <p>
+                                        Moti is a friendly dog in need of a home. He's healthy and enjoys being around people. Whether you're a family or an individual, Moti is ready to bring joy to your life. Moti is so active dog, He gets along with other dogs as well. To adopt Moti and make him a part of your family, please reach out to us today!
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 p-0">
+                            <a href="/adoptform/" class="btn btn-primary btn-block p-3" style="border-radius: 0;">Adopt</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0">
+                        <div class="card-header position-relative border-0 p-0 mb-4">
+                            <img class="card-img-top" src="https://2.bp.blogspot.com/-hzz09ewlHaI/W3HwTd22z-I/AAAAAAAAEWk/kV98ARbmQigm7AXBBOGpzznBB2EnPueXACLcBGAs/s1600/jasper.jpg" alt="">
+                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0; left: 0; z-index: 1; ;">
+                                
+                        </div>
+                            <h3 class="text-primary mb-3 text-center">Tiger</h3>
+                        </div>
+                        <div class="card-body text-center p-0">
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item p-2"></i>
+                                   <h6>
+                                    Age: Approximately 2 years
+                                   </h6>
+                                </li>
+                                <li class="list-group-item p-2">
+                                    <p>
+                                        Tiger is a sweet-natured dog searching for a caring home. He's healthy and loves human company. Whether you're a family or an individual, Tiger is ready to be your loyal friend. To adopt Tiger and provide him with a loving home, please get in touch with us today!
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 p-0">
+                            <a href="/adoptform/" class="btn btn-primary btn-block p-3" style="border-radius: 0;">Adopt</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0">
+                        <div class="card-header position-relative border-0 p-0 mb-4">
+                            <img class="card-img-top" src="https://live.staticflickr.com/5178/5447605751_0ae7c420b4.jpg" alt="">
+                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0; left: 0; z-index: 1; ;">
+                                
+                        </div>
+                            <h3 class="text-primary mb-3 text-center">Lucy</h3>
+                        </div>
+                        <div class="card-body text-center p-0">
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item p-2"></i>
+                                   <h6>
+                                    Age: About 3 years
+                                   </h6>
+                                </li>
+                                <li class="list-group-item p-2">
+                                    <p>
+                                        Meet Lucy, an affectionate dog seeking a loving home. She's in good health and enjoys being around people. Whether you're a family or an individual, Lucy is ready to be your devoted companion. To adopt Lucy and give her a forever home, please reach out to us today!
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 p-0">
+                            <a href="/adoptform/" class="btn btn-primary btn-block p-3" style="border-radius: 0;">Adopt</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0">
+                        <div class="card-header position-relative border-0 p-0 mb-4">
+                            <img class="card-img-top" src="https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/ibmig/cms/image/wlky/26881698-26881698.jpg?resize=900:*" alt="">
+                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0; left: 0; z-index: 1; ;">
+                                
+                        </div>
+                            <h3 class="text-primary mb-3 text-center">Danny</h3>
+                        </div>
+                        <div class="card-body text-center p-0">
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item p-2"></i>
+                                   <h6>
+                                    Age: Approximately 4 years
+                                   </h6>
+                                </li>
+                                <li class="list-group-item p-2">
+                                    <p>
+                                        Danny is a friendly dog in search of a loving home. He's healthy and enjoys the company of people. Whether you're a family or an individual, Danny is eager to become your loyal companion. To adopt Danny and provide him with a forever home, please contact us today!
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 p-0">
+                            <a href="/adoptform/" class="btn btn-primary btn-block p-3" style="border-radius: 0;">Adopt</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0">
+                        <div class="card-header position-relative border-0 p-0 mb-4">
+                            <img class="card-img-top" src="https://www.warwyn.tas.gov.au/wp-content/uploads/2020/04/waratah-wynyard-council-dogs-6.jpg" alt="">
+                            <div class="position-absolute d-flex flex-column align-items-center justify-content-center w-100 h-100" style="top: 0; left: 0; z-index: 1; ;">
+                                
+                        </div>
+                            <h3 class="text-primary mb-3 text-center">Macro</h3>
+                        </div>
+                        <div class="card-body text-center p-0">
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item p-2"></i>
+                                   <h6>
+                                    Age: Around 2 years
+                                   </h6>
+                                </li>
+                                <li class="list-group-item p-2">
+                                    <p>
+                                        Meet Macro, a cheerful dog hoping to find a caring home. He's in good health and loves spending time with people. Whether you're a family or an individual, Macro is ready to be your faithful friend. To adopt Macro and offer him a forever home, please get in touch with us today!
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer border-0 p-0">
+                            <a href="/adoptform/" class="btn btn-primary btn-block p-3" style="border-radius: 0;">Adopt</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <!-- Adopt End -->
+
+
+      <!-- Adopt Start -->
+      <div class="container-fluid bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="bg-primary py-5 px-4 px-sm-5">
+                        <h3 ><strong> Rapid Rescue Submission</strong></h3>
+                             
+
+<form class="py-5" method="post" action="{% url 'save-enquiry' %}">
+    {% csrf_token %}
+    <div class="form-group">
+        <input type="text" name="name" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
+    </div>
+    <div class="form-group">
+        <input type="mobile" name="mobile" class="form-control border-0 p-4" placeholder="Your Mobile Number" required="required" />
+    </div>
+    <div class="form-group">
+        <input type="text" name="location" class="form-control border-0 p-4" placeholder="Your Location" required="required" />
+    </div>
+    <div class="form-group">
+        <textarea name="message" class="form-control border-0 p-4" rows="4" placeholder="Send a Message" required="required"></textarea>
+    </div>
+    <div class="form-group">
+        <select name="service" class="custom-select border-0 px-4" style="height: 47px;">
+            <option selected>Urgency Level</option>
+            <option value="1">High</option>
+            <option value="2">Medium</option>
+            <option value="3">Low</option>
+        </select>
+    </div>
+    <div>
+        <button class="btn btn-dark btn-block border-0 py-3" type="submit">Adopt Now</button>
+    </div>
+</form>
+
+        </div>
+            </div>
+                <div class="col-lg-7 py-5 py-lg-0 px-3 px-lg-5">
+                    {% comment %} <h4 class="text-secondary mb-3">Weekend for Help</h4> {% endcomment %}
+                     
+                    <h2 class="display-4 mb-4"><span class="text-primary">Adopt </span>  Don't Shop</h2>
+                    <p> Take the first step toward bringing joy and companionship into your life. Fill out our adoption form and open your heart to a new furry friend.</p>
+                    <div class="row py-2">
+                        <div class="col-sm-6">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-items-center mb-2">
+                                    <h1 class="flaticon-house font-weight-normal text-secondary m-0 mr-3"></h1>
+                                    <h5 class="text-truncate m-0">Pet Boarding</h5>
+                                </div>
+                                <p> Providing temporary shelter and care to street dogs in need. Join us in giving these dogs a chance at a better life.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-items-center mb-2">
+                                    <h1 class="flaticon-food font-weight-normal text-secondary m-0 mr-3"></h1>
+                                    <h5 class="text-truncate m-0">Pet Feeding</h5>
+                                </div>
+                                <p> Nourishing hungry hearts, one meal at a time. Support our mission to provide sustenance and care for street dogs in need.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-items-center mb-2">
+                                    <h1 class="flaticon-grooming font-weight-normal text-secondary m-0 mr-3"></h1>
+                                    <h5 class="text-truncate m-0">Pet Grooming</h5>
+                                </div>
+                                <p class="m-0"> Restoring  smiles, one grooming session at a time. Join us in making a difference in the lives of street dogs.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-items-center mb-2">
+                                    <h1 class="flaticon-toy font-weight-normal text-secondary m-0 mr-3"></h1>
+                                    <h5 class="text-truncate m-0">Pet Tranning</h5>
+                                </div>
+                                <p class="m-0">Empowering street dogs with love and skills. Help them become happy, well-behaved companions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Adopt end -->
+     
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="row pt-5">
+        <div class="col-lg-4 col-md-12 mb-5">
+            <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">StreetPaws</span>care</h1>
+            <p class="m-0">Committed to rescuing, caring for, and protecting street animals. Join us in providing shelter, love, and a chance for Adoption. Together, we make a difference.</p>
+        </div>
+        <div class="col-lg-8 col-md-12">
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-primary mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt mr-2"></i>Sion, Mumbai, India</p>
+                    <p><i class="fa fa-phone-alt mr-2"></i>+91 7088664069</p>
+                    <p><i class="fa fa-envelope mr-2"></i>streetpawcare.info@gmail.com</p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://twitter.com/Street_paw_care"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://www.facebook.com/profile.php?id=61551695985261"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://www.linkedin.com/in/streetpaw-care-b5703b294/v"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://github.com/Sahilmandewar6?tab=projects"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-primary mb-4">Popular Links</h5>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="/"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                        <a class="text-white mb-2" href="/service/"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                        <a class="text-white mb-2" href="/adopt/"><i class="fa fa-angle-right mr-2"></i>Adopt</a>
+                        <a class="text-white mb-2" href="/contact/"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        <a class="text-white mb-2" href="/about/"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <h5 class="text-primary mb-4">Newsletter</h5>
+                    <form method="post" action="{% url 'news-letter' %}" >
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control border-0" placeholder="Your Name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control border-0" placeholder="Your Email" required="required" />
+                        </div>
+                        <div>
+                            <button class="btn btn-lg btn-primary btn-block border-0" type="submit">Submit Now</button>
+                        </div>
+                    </form>
+
+                    <!-- Add an alert div to display messages -->
+                    <div id="alert-message" style="display: none;" class="alert alert-success">Form submitted successfully!</div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="bg-light text-center text-lg-start"></footer>
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/easing/easing.min.js"></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="/static/mail/jqBootstrapValidation.min.js"></script>
+    <script src="/static/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>

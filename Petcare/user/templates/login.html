@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="static/css/login.css">
+    <style>
+        /* Common styles for both login and signup pages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+
+  background-image: url("/static/img/login-bg.jpg"); /* Corrected URL format */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-attachment: fixed; /* Keep the background fixed in place */
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+h5>a{
+  /* text-decoration: none !important; */
+  text-decoration: yellowgreen;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  background-color: #dc701d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #dc701d;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form  method="post" action="" >
+        <h2>Login Here</h2>
+        {% csrf_token %}
+        <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter Username" id="username" name="username"><br><br>
+        </div>
+        <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="pass"><br><br>
+        </div>
+        <button type="submit">Log In</button><br><br>
+        <a href="{% url 'signup' %}" >Create a account</a>
+    </form>
+    </div>
+</body>
+</html>

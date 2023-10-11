@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="/static/css/style.css" rel="stylesheet">
+
+
+   <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .modal-body {
+      text-align: left;
+    }
+
+    .donation-options {
+      margin-top: 50px;
+    }
+
+    .donation-options h3 {
+      color: #fd7e14;
+    }
+
+    .donation-button {
+      background-color: #fd7e14;
+      color: #fff;
+      border: none;
+    }
+
+    .donation-button:hover {
+      background-color: #fd7e14; /* Updated to #fd7e14 on hover */
+    }
+
+    .donation-modal-header {
+      background-color: #fd7e14;
+      color: #dc3545;
+    }
+
+    .donation-modal-header button.close {
+      color: #dc3545;
+    }
+</style>
+
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row donation-options">
+      <div class="col-md-6">
+        <h3>Offline Donation</h3>
+        <button class="btn btn-primary donation-button" data-toggle="modal" data-target="#offlineModal">Donate Offline</button>
+      </div>
+      <div class="col-md-6">
+        <h3>Online Donation</h3>
+        <button class="btn btn-primary donation-button" data-toggle="modal" data-target="#onlineModal">Donate Online</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offline Donation Modal -->
+  <div class="modal fade" id="offlineModal" tabindex="-1" role="dialog" aria-labelledby="offlineModalLabel" aria-hidden="true">
+    <!-- Modal content --><div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="onlineModalLabel">Online Donation Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        
+        <div class="modal-body">
+          <form name="donationform" id=" " method="POST" action="{% url 'donate' %}">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="fullName">Full Name:</label>
+              <input type="text" name="full_name" class="form-control" id="fullName" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+              <label for="amount">Donation Amount:</label>
+              <input type="number"  name="donation_amount"class="form-control" id="amount" placeholder="Enter donation amount" required>
+            </div>
+            <div class="form-group">
+              <label for="paymentMethod">Payment Method:</label>
+              <select class="form-control" id="paymentMethod" required name="payment_method">
+                <option value="">Select payment method</option>
+                <option value="cash">Cash</option>
+                <option value="cheque">Cheque</option>
+                <option value="bankTransfer">Bank Transfer</option>
+              </select>
+            </div>
+
+             
+            <button type="submit" class="btn btn-primary">Submit Donation</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  
+
+  </div>
+
+  <!-- Online Donation Modal -->
+  <div class="modal fade" id="onlineModal" tabindex="-1" role="dialog" aria-labelledby="onlineModalLabel" aria-hidden="true">
+    <!-- Modal content -->
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" >
+         
+        <div  style="background-image: url(/static/img/qrcode.png); width: 350px; height: 350px; background-size: cover; justify-self: center; margin-left: 70px;" >
+          
+        </div>
+       
+        
+      </div>
+    </div>
+
+  </div>
+
+  {% comment %} <script>
+    document.getElementById('donationForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+  
+  var formData = new FormData(event.target);
+  var amount = formData.get('amount');
+  var name = formData.get('name');
+
+
+  alert('Thank you, Your support is appreciated!');
+  $('#onlineModal').modal('hide'); 
+});
+  </script> {% endcomment %}
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

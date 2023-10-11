@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>StreetPawCare, About</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link rel="icon" href="/static/img/logos.png" type="image/png" style="height:40px; width:40px; border-radius:50px ;">
+
+    <!-- Favicon -->
+    <link href="/static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="/static/lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/static/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+   <!--alert function start-->
+   {% for message in messages %}
+   <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+       <strong>Message:</strong> {{ message }}
+       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+   <span aria-hidden="true">&times;</span>
+ </button>
+   </div>
+   {% endfor %}
+<!--alert function end-->
+
+      <!-- Topbar Start -->   
+        <div class="row py-3 px-lg-5">
+
+            <a href="" class="navbar-brand d-none d-lg-block">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <img class="img-fluid mr-2" src="/static/img/pet-logo2.png" style="width: 50px; height: 50px;" alt="logo">
+                    <h1 class="m-0 display-5 text-capitalize"><span class="text-primary"> StreetPaw</span>Care</h1>
+                </div> 
+            </a>
+            
+            <div class="col-lg-8 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <div class="d-inline-flex flex-column text-center pr-3 border-right">
+                        <h6>Opening Hours</h6>
+                        <p class="m-0">8.00AM - 8.00PM</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center px-3 border-right">
+                        <h6>Email Us</h6>
+                        <p class="m-0">pawcare.info@gmail.com</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center pl-3">
+                        <h6>Call Us</h6>
+                        <p class="m-0">+91 7088664069</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">StreetPaw</span>Care</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justif y-content-between px-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="/" class="nav-item nav-link">Home</a>
+                    <a href="/service/" class="nav-item nav-link">Service</a>
+                    <a href="/adopt/" class="nav-item nav-link">Adopt</a>
+                    <a href="/gallary/" class="nav-item nav-link">Gallery</a>
+                    <a href="/contact/" class="nav-item nav-link">Contact</a>
+                    <a href="/about/" class="nav-item nav-link active">About</a>
+                </div>
+                <a href="donate/" class="btn btn-lg btn-primary px-3 d-none d-lg-block">Donate Us</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- About Start -->
+    <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
+                {% comment %} <h1 class="text-secondary mb-3">Our Story</h1> {% endcomment %}
+                <h2 class="display-4 mb-4"><span class="text-primary">Our </span> Story</h2>
+                <h5 class="text-muted mb-3">At StreetPaw Care, our purpose is to make a positive change for street animals. We want to give them better lives by providing a safe place, caring for their health, and teaching people about responsible pet ownership. Since we started, we've been focused on improving the lives of animals that need help.</h5>
+                <p class="mb-4"></p>
+                <ul class="list-inline">
+                    <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Rescue and Shelter</h5></li>
+                    <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>24/7 Medical Help</h5></li>
+                    <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Finding Families</h5></li>
+                </ul>
+                <a href="services/#our" class="btn btn-lg btn-primary mt-3 px-4">Learn More</a>
+            </div>
+            <div class="col-lg-5">
+                <div class="row px-3">
+                    <div class="col-12 p-0">
+                        <img class="img-fluid w-100" src="/static/img/pet1.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features Start -->
+   <div class="container-fluid bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <img class="img-fluid w-100" src="/static/img/ourpet.jpg" alt="">
+            </div>
+            <div class="col-lg-7 py-5 py-lg-0 px-3 px-lg-5">
+            
+                <h2 class="display-4 mb-4"><span class="text-primary">How We </span> Do It</h2>
+                <p class="mb-4">At StreetPaw Care, our website is more than just a platform it's a pathway to a world where street animals are treated with the love and respect they deserve. Join us in making this vision a reality, one click at a time</p>
+                <div class="row py-2">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="flaticon-cat font-weight-normal text-secondary m-0 mr-3"></h1>
+                            <h5 class="text-truncate m-0">Saving Animals</h5>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center mb-4">
+                            <h1 class="flaticon-doctor font-weight-normal text-secondary m-0 mr-3"></h1>
+                            <h5 class="text-truncate m-0">Providing Shelter</h5>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <h1 class="flaticon-care font-weight-normal text-secondary m-0 mr-3"></h1>
+                            <h5 class="text-truncate m-0">Special Care</h5>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center">
+                            <h1 class="flaticon-dog font-weight-normal text-secondary m-0 mr-3"></h1>
+                            <h5 class="text-truncate m-0">Adoption</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+
+
+  <!-- Team Start -->
+  <div class="container mt-5 pt-5 pb-3">
+    <div class="d-flex flex-column text-center mb-5">
+        <h4 class="text-secondary mb-3">Team Member</h4>
+        <h1 class="display-4 m-0">Meet Our <span class="text-primary">Team Member</span></h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="team card position-relative overflow-hidden border-0 mb-4">
+                <img class="card-img-top" src="/static/img/manjee.jpeg" alt="">
+                <div class="card-body text-center p-0">
+                    <div class="team-text d-flex flex-column justify-content-center bg-light">
+                        <h5>Manjeet Jangra</h5>
+                        <i>ADIT Trainee</i>
+                    </div>
+                    <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="team card position-relative overflow-hidden border-0 mb-4">
+                <img class="card-img-top" src="/static/img/lalit.jpeg" alt="">
+                <div class="card-body text-center p-0">
+                    <div class="team-text d-flex flex-column justify-content-center bg-light">
+                        <h5>Lalit Kumar Koli</h5>
+                        <i>ADIT Trainee</i>
+                    </div>
+                    <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="team card position-relative overflow-hidden border-0 mb-4">
+                <img class="card-img-top" src="/static/img/sahi.jpeg" alt="">
+                <div class="card-body text-center p-0">
+                    <div class="team-text d-flex flex-column justify-content-center bg-light">
+                        <h5>Sahil Mandewar</h5>
+                        <i>ADIT Trainee</i>
+                    </div>
+                    <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://github.com/Sahilmandewar6?tab=projects"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://twitter.com/SahilMandewar06"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://www.linkedin.com/in/sahil-mandewar-10858b24b/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://instagram.com/sahil_mandewar_06?igshid=MzRlODBiNWFlZA"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="team card position-relative overflow-hidden border-0 mb-4">
+                <img class="card-img-top" src="/static/img/rish.jpeg" alt="">
+                <div class="card-body text-center p-0">
+                    <div class="team-text d-flex flex-column justify-content-center bg-light">
+                        <h5>Rishi Kanujiya</h5>
+                        <i>ADIT Trainee</i>
+                    </div>
+                    <div class="team-social d-flex align-items-center justify-content-center bg-dark">
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-github"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-4 col-md-12 mb-5">
+                <h1 class="mb-3 display-5 text-capitalize text-white"><span class="text-primary">StreetPaws</span>care</h1>
+                <p class="m-0">Committed to rescuing, caring for, and protecting street animals. Join us in providing shelter, love, and a chance for Adoption. Together, we make a difference.</p>
+            </div>
+            <div class="col-lg-8 col-md-12">
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Get In Touch</h5>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>Sion, Mumbai, India</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+91 7088664069</p>
+                        <p><i class="fa fa-envelope mr-2"></i>streetpawcare.info@gmail.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://twitter.com/Street_paw_care"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://www.facebook.com/profile.php?id=61551695985261"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://www.linkedin.com/in/streetpaw-care-b5703b294/v"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 36px; height: 36px;" href="https://github.com/Sahilmandewar6?tab=projects"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Popular Links</h5>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="/"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="/service/"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                            <a class="text-white mb-2" href="/adopt/"><i class="fa fa-angle-right mr-2"></i> Adopt Pet</a>
+                            <a class="text-white mb-2" href="/contact/"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                            <a class="text-white mb-2" href="/about/"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <h5 class="text-primary mb-4">Newsletter</h5>
+                        <form method="post" action="{% url 'news-letter' %}" >
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control border-0" placeholder="Your Name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control border-0" placeholder="Your Email" required="required" />
+                            </div>
+                            <div>
+                                <button class="btn btn-lg btn-primary btn-block border-0" type="submit">Submit Now</button>
+                            </div>
+                        </form>
+
+                        <!-- Add an alert div to display messages -->
+                        <div id="alert-message" style="display: none;" class="alert alert-success">Form submitted successfully!</div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <footer class="bg-light text-center text-lg-start"></footer>
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/easing/easing.min.js"></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="/static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="/static/mail/jqBootstrapValidation.min.js"></script>
+    <script src="/static/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>
